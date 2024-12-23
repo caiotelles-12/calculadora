@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora JS</title>
+  </head>
+  <body>
+    <h1 class="titulo">Calculadora</h1>
+    <div class="calculadora">
+      <input class="display" readonly />
+
+      <button class="botao-preto" onclick="limparDisplay()">AC</button>
+      <button class="botao-preto" onclick="inverterNumero()">+/-</button>
+      <button class="botao-preto" onclick="adicionarCaractere('/')">/</button>
+      <button class="botao-preto" onclick="adicionarCaractere('*')">*</button>
+      <button class="botao-cinza" onclick="adicionarCaractere('7')">7</button>
+      <button class="botao-cinza" onclick="adicionarCaractere('8')">8</button>
+      <button class="botao-cinza" onclick="adicionarCaractere('9')">9</button>
+      <button class="botao-preto" onclick="adicionarCaractere('-')">-</button>
+      <button class="botao-cinza" onclick="adicionarCaractere('4')">4</button>
+      <button class="botao-cinza" onclick="adicionarCaractere('5')">5</button>
+      <button class="botao-cinza" onclick="adicionarCaractere('6')">6</button>
+      <button class="botao-preto" onclick="adicionarCaractere('+')">+</button>
+      <button class="botao-cinza" onclick="adicionarCaractere('1')">1</button>
+      <button class="botao-cinza" onclick="adicionarCaractere('2')">2</button>
+      <button class="botao-cinza" onclick="adicionarCaractere('3')">3</button>
+      <button class="botao-igual igual" onclick="calcular()">=</button>
+      <button class="botao-cinza zero" onclick="adicionarCaractere('0')">
+        0
+      </button>
+      <button class="botao-cinza" onclick="adicionarCaractere('.')">.</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
